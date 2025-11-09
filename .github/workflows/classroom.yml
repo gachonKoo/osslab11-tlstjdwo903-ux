@@ -29,8 +29,8 @@ jobs:
       uses: classroom-resources/autograding-io-grader@v1
       with:
         test-name: test
-        setup-command: 'export PYTHONPATH=.:$PYTHONPATH'
-        command: python tester.py
+        setup-command: ''
+        command: 'python -m tester'
         input: ''
         expected-output: |-
           c = 5.0
