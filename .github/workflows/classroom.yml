@@ -14,6 +14,7 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v4
       
+    # 1. 파이썬 3.13 버전 설정
     - name: Set up Python 3.13
       uses: actions/setup-python@v5
       with:
@@ -25,6 +26,7 @@ jobs:
       with:
         test-name: test
         setup-command: ''
+        # 2. 'import geo.utils' 문제를 해결하는 명령어
         command: 'python -m tester' 
         input: ''
         expected-output: |-
